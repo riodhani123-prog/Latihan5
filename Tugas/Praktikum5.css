@@ -1,0 +1,153 @@
+
+/* Mengatur seluruh halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Header */
+header {
+    background-color: gray;
+    padding: 10px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 3px solid #5279a8;
+    padding: 8px 35px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #5279a8;
+}
+
+/* Banner */
+.banner {
+    background-image: url("3e896099f8059f6d9622c2dae5e8cd07.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 120px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+}
+
+/* Konten utama */
+main {
+    display: flex;
+    min-height: 300px;
+}
+
+/* Sidebar */
+aside {
+    background-color: #234d7e;
+    color: white;
+    width: 32%;
+    padding: 20px;
+}
+
+aside h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+aside hr {
+    width: 30px;
+    border: 1px solid #00bfff;
+    margin-bottom: 20px;
+}
+
+aside p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Bagian pendidikan */
+.content {
+    width: 68%;
+    padding: 20px 30px;
+}
+
+.pendidikan {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.kotak {
+    background-color: #527fb5;
+    border: 3px solid #234d7e;
+    width: 65px;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Contact */
+.contact {
+    background-color: #234d7e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #5279a8;
+    font-size: 12px;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 600px) {
+
+    nav a {
+        padding: 8px 15px;
+        margin-bottom: 5px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside, .content {
+        width: 100%;
+    }
+
+    .pendidikan {
+        flex-wrap: wrap;
+    }
+
+    .banner {
+        height: 120px;
+    }
+}
